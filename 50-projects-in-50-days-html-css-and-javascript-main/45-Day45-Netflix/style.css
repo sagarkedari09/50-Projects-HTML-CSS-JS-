@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.5em;
+}
+.menu-btn {
+  position: fixed;
+  background-color: transparent;
+
+  top: 10px;
+  left: 10px;
+}
+
+.text {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+}
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black {
+  width: 40%;
+  background-color: black;
+  transition-delay: 0.4s;
+}
+.nav-black.visible {
+  transition-delay: 0s;
+}
+.nav-red {
+  background-color: red;
+  width: 95%;
+  transition-delay: 0.2s;
+}
+.nav-red.visible {
+  transition-delay: 0.2s;
+}
+.nav-white {
+  background-color: white;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  align-self: flex-end;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: rgb(34, 31, 31);
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
